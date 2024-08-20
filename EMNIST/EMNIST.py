@@ -19,8 +19,8 @@ warnings.filterwarnings("ignore")
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-TRAIN_ROW_LIMIT = 9999999999
-TEST_ROW_LIMIT = 9999999999
+TRAIN_ROW_LIMIT = 999999999
+TEST_ROW_LIMIT = 999999999
 
 train_df_raw = pd.read_csv("./dataset/EMNIST/emnist-balanced-train.csv", nrows=TRAIN_ROW_LIMIT)
 test_df_raw = pd.read_csv("./dataset/EMNIST/emnist-balanced-test.csv", nrows=TEST_ROW_LIMIT)
